@@ -1,0 +1,136 @@
+model = "gpt-5.6-sol"
+model_reasoning_effort = "xhigh"
+plan_mode_reasoning_effort = "xhigh"
+model_verbosity = "low"
+show_raw_agent_reasoning = false
+commit_attribution = ""
+analytics.enabled = false
+model_instructions_file = "~/.codex/custom-codex-system-prompt.md"
+service_tier = "default"
+check_for_update_on_startup = false
+
+[features]
+personality = false
+tool_suggest = false
+apps = false
+image_generation = false
+fast_mode = true
+multi_agent = true
+prevent_idle_sleep = true
+terminal_resize_reflow = true
+
+[agents]
+max_threads = 8
+max_depth = 1
+job_max_runtime_seconds = 1800
+
+[notice]
+hide_full_access_warning = true
+fast_default_opt_out = true
+hide_rate_limit_model_nudge = true
+
+# tui and keymap
+
+[tui]
+status_line = ["current-dir", "model-with-reasoning", "context-used", "weekly-limit", "five-hour-limit", "thread-title", "context-window-size"]
+status_line_use_colors = true
+theme = "shape"
+show_tooltips = false
+session_picker_view = "dense"
+pet = "disabled"
+
+[tui.keymap.pager]
+page_up = "page-up"
+page_down = "page-down"
+
+[tui.keymap.editor]
+insert_newline = "enter"
+kill_line_end = "ctrl-alt-shift-p"
+kill_whole_line = "ctrl-k"
+move_right = "right"
+move_left = "left"
+
+[tui.keymap.composer]
+submit = "alt-enter"
+history_search_previous = "shift-f3"
+history_search_next = "f3"
+
+[tui.keymap.global]
+toggle_fast_mode = "ctrl-f"
+
+[tui.keymap.chat]
+increase_reasoning_effort = "f2"
+decrease_reasoning_effort = "f1"
+
+# apps and plugins
+
+[plugins."github@openai-curated"]
+enabled = false
+
+[apps._default]
+enabled = false
+destructive_enabled = false
+open_world_enabled = false
+
+[apps.github]
+enabled = false
+default_tools_enabled = false
+destructive_enabled = false
+open_world_enabled = false
+
+[apps.connector_openai_default_templates]
+enabled = false
+
+# mcp
+
+[mcp_servers.unity]
+enabled = true
+command = "conduit"
+cwd = "/home/apk/src/conduit"
+tool_timeout_sec = 600
+tools.discard_scenes.approval_mode = "approve"
+tools.execute_code.approval_mode = "approve"
+tools.find_missing_scripts.approval_mode = "approve"
+tools.find_references_to.approval_mode = "approve"
+tools.from_json_overwrite.approval_mode = "approve"
+tools.get_dependencies.approval_mode = "approve"
+tools.help.approval_mode = "approve"
+tools.play.approval_mode = "approve"
+tools.refresh_asset_database.approval_mode = "approve"
+tools.restart.approval_mode = "approve"
+tools.run_tests_editmode.approval_mode = "approve"
+tools.run_tests_player.approval_mode = "approve"
+tools.run_tests_playmode.approval_mode = "approve"
+tools.save_scenes.approval_mode = "approve"
+tools.screenshot.approval_mode = "approve"
+tools.search.approval_mode = "approve"
+tools.show.approval_mode = "approve"
+tools.status.approval_mode = "approve"
+tools.to_json.approval_mode = "approve"
+tools.reflect.approval_mode = "approve"
+tools.view_burst_asm.approval_mode = "approve"
+tools.profiler_overview.approval_mode = "approve"
+tools.profiler_browse.approval_mode = "approve"
+tools.profiler_record.approval_mode = "approve"
+tools.reimport_assets.approval_mode = "approve"
+tools.playmode.approval_mode = "approve"
+tools.editmode.approval_mode = "approve"
+
+# skills
+
+[skills]
+bundled.enabled = false
+include_instructions = false
+
+# permissions
+
+[sandbox_workspace_write]
+network_access = true
+writable_roots = [
+  "/home/apk/.config/chromium",
+  "/home/apk/.cache",
+  "/home/apk/.nuget",
+  "/home/apk/.local/share/NuGet",
+  "/home/apk/.local/share/dotnet",
+  "/home/apk/.dotnet",
+]

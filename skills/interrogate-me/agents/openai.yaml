@@ -1,0 +1,8 @@
+interface:
+  display_name: 'apkd/interrogate-me'
+  short_description: 'Interrogate the user to narrow down the design.'
+  brand_color: '#cc0000'
+  default_prompt: 'Use $interrogate-me.'
+
+policy:
+  allow_implicit_invocation: true

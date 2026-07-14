@@ -1,0 +1,8 @@
+interface:
+  display_name: 'apkd/analyze'
+  short_description: 'Only analyze. Don''t edit yet.'
+  brand_color: '#cc0000'
+  default_prompt: 'Use $analyze.'
+
+policy:
+  allow_implicit_invocation: false

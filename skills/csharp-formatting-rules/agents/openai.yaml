@@ -1,0 +1,10 @@
+interface:
+  display_name: 'apkd/csharp-formatting-rules'
+  short_description: 'Rules for C# code formatting.'
+  icon_small: './assets/small-logo.svg'
+  icon_large: './assets/large-logo.png'
+  brand_color: '#cc0000'
+  default_prompt: 'Use $csharp-formatting-rules.'
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,8 @@
+interface:
+  display_name: 'apkd/simplify-changeset'
+  short_description: 'Simplify and optimize the changeset. Make the diff elegant and minimalist.'
+  brand_color: '#cc0000'
+  default_prompt: 'Use $simplify-changeset.'
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,8 @@
+interface:
+  display_name: 'apkd/git-amend'
+  short_description: 'Amend the last commit, adding the current changes'
+  brand_color: '#cc0000'
+  default_prompt: 'Use $git-amend.'
+
+policy:
+  allow_implicit_invocation: false
